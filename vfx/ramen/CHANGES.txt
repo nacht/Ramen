@@ -1,0 +1,8 @@
+
+    0.6.2
+    -----
+
+        - New nodes: Alpha Ops, DV Chroma Blur.
+        - Improvements for layer nodes, less memory use, bug fixes.
+        - Correct handling of sRGB input images.
+        - New rmaketiled command line utility, to create proxies for Ramen and other uses.

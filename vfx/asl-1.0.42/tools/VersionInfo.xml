@@ -1,0 +1,16 @@
+<?xml version='1.0' standalone='yes'?>
+<manifest version="1.1">
+  <versioninfo>
+    <build date="20080502" lang="mul" phase_major="alpha" phase_minor="1.0.37" product="Adobe Source Library" target="" time="170000" version="1" version_build="1.0.37">
+      <components>
+        <build date="20080502" lang="mul" phase_major="GM" phase_minor="1" product="Boost" target="" time="170000" version="1_35_0" version_build="1">
+          <repository authority="boxer.corp.adobe.com:1770" path="//boost_libraries/..." query="See https://zerowing.corp.adobe.com/display/stlab/Changelist+Numbers+For+ASL+Release for changelist info" scheme="p4" />
+        </build>
+        <build date="20080502" lang="mul" phase_major="GM" phase_minor="1" product="Intel Thread Building Blocks" target="" time="170000" version="tbb20_014oss" version_build="2">
+          <repository authority="boxer.corp.adobe.com:1770" path="//intel_tbb_libraries/..." query="See https://zerowing.corp.adobe.com/display/stlab/Changelist+Numbers+For+ASL+Release for actual changelist and version info" scheme="p4" />
+        </build>
+      </components>
+      <repository authority="boxer.corp.adobe.com:1770" path="//adobe_source_libraries/..." query="See https://zerowing.corp.adobe.com/display/stlab/Changelist+Numbers+For+ASL+Release for changelist info" scheme="p4" />
+    </build>
+  </versioninfo>
+</manifest>

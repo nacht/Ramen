@@ -1,0 +1,47 @@
+
+1. Dependencies
+
+You need the following libraries to build ramen:
+
+Name			Website				    Versions tested
+----			-------				    ---------------
+
+OpenGL			included in your system		    2.0 or newer
+Boost			www.boost.org			    1.42 or 1.43 ( other versions don't work)
+Intel TBB		www.threadingbuildingblocks.org	    2.2 (3.0 is untested)
+QT			www.qtsoftware.com		    4.4.3 or newer
+IlmBase			www.openexr.net			    1.0.1
+OpenEXR			www.openexr.net			    1.6.0
+Libjpeg
+Libtiff
+Libpng
+python			www.python.org			    2.6
+OpenImageIO						    SVN Release branch 0.8 or later
+cortex-vfx		code.google.com/p/cortex-vfx/       5.0.0 (Headers only, no need to build the libraries)
+
+2. Compiling
+
+Get and install the dependencies using their respective instructions.
+You need to build boost and TBB first.
+
+Building boost as shared libraries is recommended.
+Add threading=multi variant=release link=shared to the bjam command.
+
+Get CMake if not already installed in your system.
+
+You need a SVN client to download OpenImageIO. There's no public
+release yet.
+
+build the other dependencies
+
+download cortex-vfx and copy the include/IECore dir where 
+your compiler can find it (/usr/local/include is a good choice in unix systems)
+
+Then do:
+
+cd <ramen directory>
+edit CMakeLists.txt as needed
+mkdir bin
+cd bin
+cmake -DCMAKE_BUILD_TYPE=Release ../
+make

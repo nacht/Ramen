@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <df name="bl_defocus" root="../../bl_defocus">
+      <df name="ref">
+        <in>CMP_defocus.c</in>
+        <in>CMP_util.c</in>
+        <in>CMP_util.h</in>
+      </df>
+      <in>BLI_rand.cpp</in>
+      <in>BLI_rand.h</in>
+      <in>CMP_defocus.c</in>
+      <in>CMP_defocus.h</in>
+      <in>ImathInt64.h</in>
+      <in>ImathLimits.h</in>
+      <in>ImathRandom.cpp</in>
+      <in>ImathRandom.h</in>
+      <in>bl_defocus_plugin.cpp</in>
+      <in>bl_defocus_plugin.hpp</in>
+      <in>bl_defocus_processor.cpp</in>
+      <in>bl_defocus_processor.hpp</in>
+      <in>bl_zdefocus_plugin.cpp</in>
+      <in>bl_zdefocus_plugin.hpp</in>
+      <in>register_plugins.cpp</in>
+    </df>
+    <df name="greycstoration" root="../../greycstoration">
+      <in>greycstoration_plugin.cpp</in>
+      <in>greycstoration_plugin.hpp</in>
+      <in>register_plugins.cpp</in>
+    </df>
+    <df name="ofx-1.2" root="../../../ofx-1.2">
+      <df name="doc">
+      </df>
+      <df name="Examples">
+        <df name="Basic">
+          <in>basic.cpp</in>
+        </df>
+        <df name="Custom">
+          <in>custom.cpp</in>
+        </df>
+        <df name="DepthConverter">
+          <in>depthConverter.cpp</in>
+        </df>
+        <df name="include">
+          <in>ofxUtilities.H</in>
+        </df>
+        <df name="Invert">
+          <in>invert.cpp</in>
+        </df>
+        <df name="Overlay">
+          <in>overlay.cpp</in>
+        </df>
+        <df name="Rectangle">
+          <in>rectangle.cpp</in>
+        </df>
+        <df name="Test">
+          <in>ofxLog.H</in>
+          <in>ofxLog.cpp</in>
+          <in>testProperties.cpp</in>
+        </df>
+        <df name="XML">
+        </df>
+      </df>
+      <in>fnOfxExtensions.h</in>
+      <in>fnPublicOfxExtensions.h</in>
+      <in>ofxCore.h</in>
+      <in>ofxImageEffect.h</in>
+      <in>ofxInteract.h</in>
+      <in>ofxKeySyms.h</in>
+      <in>ofxMemory.h</in>
+      <in>ofxMessage.h</in>
+      <in>ofxMultiThread.h</in>
+      <in>ofxParam.h</in>
+      <in>ofxParametricParam.h</in>
+      <in>ofxPixels.h</in>
+      <in>ofxProgress.h</in>
+      <in>ofxProperty.h</in>
+      <in>ofxTimeLine.h</in>
+    </df>
+    <df name="OfxSupport-1.1.3" root="../../../OfxSupport-1.1.3">
+      <df name="doc">
+      </df>
+      <df name="include">
+        <in>ofxsCore.h</in>
+        <in>ofxsImageBlender.H</in>
+        <in>ofxsImageEffect.h</in>
+        <in>ofxsInteract.h</in>
+        <in>ofxsLog.h</in>
+        <in>ofxsMemory.h</in>
+        <in>ofxsMessage.h</in>
+        <in>ofxsMultiThread.h</in>
+        <in>ofxsParam.h</in>
+        <in>ofxsProcessing.H</in>
+        <in>ofxsRect.h</in>
+      </df>
+      <df name="Library">
+        <in>ofxsCore.cpp</in>
+        <in>ofxsImageEffect.cpp</in>
+        <in>ofxsInteract.cpp</in>
+        <in>ofxsLog.cpp</in>
+        <in>ofxsMultiThread.cpp</in>
+        <in>ofxsParams.cpp</in>
+        <in>ofxsProperty.cpp</in>
+        <in>ofxsPropertyValidation.cpp</in>
+        <in>ofxsRect.cpp</in>
+        <in>ofxsSupportPrivate.h</in>
+      </df>
+      <df name="Plugins">
+        <df name="Basic">
+          <in>basic.cpp</in>
+        </df>
+        <df name="Field">
+          <in>field.cpp</in>
+        </df>
+        <df name="Generator">
+          <in>noise.cpp</in>
+          <in>randomGenerator.H</in>
+          <in>randomGenerator.cpp</in>
+        </df>
+        <df name="include">
+          <in>ofxsImageBlender.H</in>
+          <in>ofxsProcessing.H</in>
+        </df>
+        <df name="Invert">
+          <in>invert.cpp</in>
+        </df>
+        <df name="MultiBundle">
+          <in>PluginRegistration.cpp</in>
+          <in>multibundle1.cpp</in>
+          <in>multibundle1.h</in>
+          <in>multibundle2.cpp</in>
+          <in>multibundle2.h</in>
+        </df>
+        <df name="Retimer">
+          <in>retimer.cpp</in>
+        </df>
+        <df name="Tester">
+          <in>Tester.cpp</in>
+        </df>
+        <df name="Transition">
+          <in>crossFade.cpp</in>
+        </df>
+      </df>
+      <df name="PropTester">
+        <in>propTester.cpp</in>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>../../Makefile</itemPath>
+      <itemPath>ofx_plugins-Makefile.mk</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject|build|test|nb)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>../../../ofx-1.2</Elem>
+    <Elem>../../../OfxSupport-1.1.3</Elem>
+    <Elem>../../greycstoration</Elem>
+    <Elem>../../bl_defocus</Elem>
+    <Elem>../../common</Elem>
+  </sourceRootList>
+  <projectmakefile>ofx_plugins-Makefile.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>../..</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>../../../../build/ramen/build/ramen/ramen</executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>../../CImg</pElem>
+              <pElem>../../../ofx-1.2</pElem>
+              <pElem>../../../OfxSupport-1.1.3/include</pElem>
+              <pElem>/usr/local/include</pElem>
+            </incDir>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+    </conf>
+  </confs>
+</configurationDescriptor>

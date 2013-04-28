@@ -1,0 +1,87 @@
+/*!
+\defgroup eve_reference Layout Library Language Reference
+\ingroup layout_library
+
+The Layout Library is a runtime library (see \ref eve_engine). The Layout Library Language and \ref eveparser are facilities provided to make it easier to assemble an adobe::eve_t from a simple declaration. This manual describes the Layout Library Language.
+
+The language is divided into three parts, \ref expression_lexical_conventions, \ref expression_expressions, and \ref view_declarations. The first two parts are shared by the Adam Language, and describe in the \ref expression_reference.
+
+\section view_declarations Layout Declarations
+
+\subsection eve_grammar Layout Grammar
+\verbatim
+layout_specifier        = [lead_comment] "layout" identifier "{" { qualified_cell_decl }
+                            "view" view_definition "}" [trail_comment].
+
+qualified_cell_decl     = interface_set_decl | constant_set_decl.
+
+interface_set_decl      = "interface"   ":" { cell_decl }.
+constant_set_decl       = "constant"    ":" { cell_decl }.
+
+cell_decl               = [lead_comment] identifier initializer end_statement.
+initializer             = ":" expression.
+    
+view_definition         = [lead_comment] view_class_decl ((";" [trail_comment])
+                            | ([trail_comment] view_statement_list)).
+view_statment_sequence  = { view_definition }.
+view_class_decl         = ident "(" [ named_argument_list ] ")".
+view_statment_list      = "{" view_statement_sequence "}".
+
+end_statement           = ";" [trail_comment].
+
+keywords                += "layout" | "view" | "interface" | "constant".
+\endverbatim
+
+A layout declaration consists of two parts - a block of cell declarations and a view instance. Here is an example of a simple layout declaration:
+
+\verbatim
+layout simple_dialog
+{
+ constant:
+    dialog_name: "Hello";
+
+    view dialog(name: dialog_name)
+    {
+        button(name: "World!");
+    }
+}
+\endverbatim
+
+The identifier "simple_dialog" names this layout [NOTE: This identifier is currently unused by the system but intended for future use].
+
+The first part, beginning with the qualifier "constant:", declares cells. A layout cell is similar to a sheet cell [include reference here to adam sheets] but currently more limited. A cell is followed by an initializer, the string "Hello" in our example. The initializers can be any valid expression and are evaluated in the order they are declared. A cell name may be used as a variable name in any expression after the declaration. Here the cell dialog_name is used as a variable to set the name of the dialog instance.
+
+The second part of the layout is the view instance, beginning with the keyword "view". This consists of a nested set of view class declarations. Here "dialog(name: dialog_name)" declares a "dialog" with the property "name" and the value "Hello". A layout does not ascribe meaning to the view class or view class properties, the particular set of view classes and properties is dependent on the API upon which the layout engine and parser are integrated. ASL does provide a common set of view classes for the Mac OS X Carbon and Win32 APIs which should serve as an example for integrating with any API. [include reference to widget library here.]
+
+The other type of cell supported by layouts are interface cells. An interface cell can be bound against from within the view instance. This is a runtime binding (unlink using a cell as a variable which is evaluated once at parse time). This is useful for maintaining view specific state such as which panel in a tab group is shown:
+
+\verbatim
+layout simple_tab_group
+{
+ interface:
+    visible_panel: @first_panel; // default to first panel
+
+    view dialog(name: "Simple Tab Group")
+    {
+        tab_group(  bind: @visible_panel,
+                    items: [
+                        {name: "Panel 1", value: @first_panel},
+                        {name: "Panel 2", value: @second_panel}
+                    ])
+        {
+            panel(value: @first_panel, bind: @visible_panel)
+            {
+                static_text(name: "Contents of first panel.");
+            }
+    
+            panel(value: @second_panel, bind: @visible_panel)
+            {
+                static_text(name: "Contents of second panel.");
+            }
+        }
+    }
+}
+\endverbatim
+
+This layout will construct a dialog with a tab group with two panels which can be flipped between. Which panel is visible is controlled by the interface cell "visible_panel". [NOTE: In a future release the layout state will be easily persisted including the current window size, if it is grow-able, and position.].
+*/

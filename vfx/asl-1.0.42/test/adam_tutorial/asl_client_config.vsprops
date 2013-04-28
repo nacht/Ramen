@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="asl_client_config"
+	>
+	<UserMacro
+		Name="ASLRoot"
+		Value="$(SolutionDir)..\..\..\"
+	/>
+</VisualStudioPropertySheet>

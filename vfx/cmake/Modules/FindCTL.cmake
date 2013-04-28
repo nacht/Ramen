@@ -1,0 +1,31 @@
+# - Find Ampas CTL
+# Find CTL headers and libraries.
+#
+#  CTL_INCLUDE_DIRS - where to find tbb uncludes.
+#  CTL_LIBRARIES    - List of libraries when using tbb.
+#  CTL_FOUND        - True if tbb found.
+
+# Look for the header file.
+FIND_PATH(CTL_INCLUDE_DIR NAMES CTL/CtlSimdInterpreter.h)
+
+# Look for the library.
+FIND_LIBRARY(CTL_LIBRARY NAMES IlmCtl)
+FIND_LIBRARY(CTL_MATH_LIBRARY NAMES IlmCtlMath)
+FIND_LIBRARY(CTL_SIMD_LIBRARY NAMES IlmCtlSimd)
+
+# handle the QUIETLY and REQUIRED arguments and set TBB_FOUND to TRUE if
+# all listed variables are TRUE
+INCLUDE(FindPackageHandleStandardArgs)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(CTL DEFAULT_MSG CTL_LIBRARY CTL_MATH_LIBRARY CTL_SIMD_LIBRARY CTL_INCLUDE_DIR)
+
+# Copy the results to the output variables.
+IF(CTL_FOUND)
+  SET(CTL_LIBRARIES ${CTL_LIBRARY} ${CTL_MATH_LIBRARY} ${CTL_SIMD_LIBRARY})
+  SET(CTL_INCLUDE_DIRS ${CTL_INCLUDE_DIR})
+ELSE(CTL_FOUND)
+  SET(CTL_LIBRARIES)
+  SET(CTL_INCLUDE_DIRS)
+ENDIF(CTL_FOUND)
+
+MARK_AS_ADVANCED(CTL_INCLUDE_DIR CTL_LIBRARY CTL_MATH_LIBRARY CTL_SIMD_LIBRARY)
+

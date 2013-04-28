@@ -1,0 +1,7 @@
+How to install
+--------------
+
+Copy the headers to a directory your 
+compiler can find them. /usr/local/include 
+is a good choice on linux and OSX.
+

@@ -1,0 +1,6 @@
+#!/bin/sh
+dirname=`dirname $0`
+LD_LIBRARY_PATH=$PWD/$dirname/lib
+export LD_LIBRARY_PATH
+$PWD/$dirname/ramen.bin $*
+

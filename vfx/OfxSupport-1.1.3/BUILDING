@@ -1,0 +1,17 @@
+Dependencies
+------------
+
+Dependent upon the following
+
+*ofx header files
+
+How to build the library
+------------------------
+
+cd OfxSupport-1.1.3
+mkdir build
+cd build
+cmake ..
+make
+make install ( /usr/local by default)
+

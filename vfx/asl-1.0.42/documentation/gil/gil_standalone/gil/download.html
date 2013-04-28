@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><!--
+    Copyright 2005-2007 Adobe Systems Incorporated
+    Distributed under the MIT License (see accompanying file LICENSE_1_0_0.txt
+    or a copy at http://stlab.adobe.com/licenses.html)
+
+    Some files are held under additional license.
+    Please see "http://stlab.adobe.com/licenses.html" for more information.
+-->
+<title>Adobe Generic Image Library: Download</title>
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+    <link type="text/css" rel="stylesheet" href="adobe_source.css">
+<table style="margin: 0pt; padding: 0pt; width: 100%;" border="0" cellpadding="0" cellspacing="0"><tbody><tr>
+<td style="background-color: rgb(238, 238, 238);" nowrap="1" valign="top">
+    <div style="padding: 5px;" align="center">
+        <a title="www.adobe.com home page" href="http://www.adobe.com/" tabindex="2" style="border: medium none ;">
+            <img src="adobe_logo.gif" alt="Adobe Systems, Inc." style="padding: 3px;">
+        </a>
+    </div>
+    <div style="margin: 5px;">
+        <h3 class="navbar">Information</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="licenses.html">License</a></li>
+            <li><a href="contribute.html">Contribute to GIL</a></li>
+            <li><a href="contributors.html">Acknowledgements</a></li>
+            <p></p>
+            <li><a href="http://sourceforge.net/forum/forum.php?forum_id=648138">Discussion Forum</a></li>
+            <li><a href="mailto:lbourdev@adobe.com">Contact us</a></li>
+        </ul>
+        <h3 class="navbar">Other Resources</h3>
+        <ul>
+            <li><a href="http://stlab.adobe.com/">Adobe Open Source</a></li>
+            <li><a href="http://www.boost.org/">Boost</a></li>
+            <li><a href="http://www.sgi.com/tech/stl">SGI STL</a></li>
+        </ul>
+    </div>
+</td>
+<td style="padding-left: 10px; padding-right: 10px; padding-bottom: 10px;" valign="top" width="100%">
+
+<!-- End Header -->
+<br>
+<h1><a class="anchor" name="download">Instructions for downloading GIL</a></h1>
+<h2><a class="anchor" name="download_m1">Download a Stand-Alone Version</a></h2>
+The latest stable version of GIL can be obtained as a stand-alone library. The GIL core 
+consists of a collection of C++ header files and depends only on boost.
+
+<p>
+Installation instructions:
+
+<ol>
+
+<li>Download a version of boost from <a href="http://www.boost.org">http://www.boost.org</a>.</li>
+Make sure boost is in your include path. You don't need to compile boost if you use it just for GIL.
+<p>
+<li>Download GIL 2.1.1 from here:</li>
+
+<ul>
+<li><a href="gil.zip">gil.zip</a></li>
+<li><a href="gil.tar.gz">gil.tar.gz</a></li>
+</ul>
+
+Place the boost/gil directory into the boost header directory and the libs/gil directory into the boost/libs directory.
+<p>
+<li>(Optional) If you need support for reading and writing images, you will need to download the corresponding image libraries:
+
+<ul>
+<li>To use <b>JPEG</b>: Compile and link against <tt>libjpeg.lib</tt> (available at <a href="http://www.ijg.org">http://www.ijg.org</a>). Make sure <tt>jpeglib.h</tt> is in your include path.</li>
+<li>To use <b>TIFF</b>: Compile and link against <tt>libtiff.lib</tt> (available at <a href="http://www.libtiff.org">http://www.libtiff.org</a>). Make sure <tt>tiffio.h</tt> is in your include path.</li>
+<li>To use <b>PNG</b>: Compile and link against <tt>libpng.lib</tt> (available at <a href="http://www.libpng.org">http://www.libpng.org</a>). Make sure <tt>png.h</tt> is in your include path.</li>
+</ul>
+
+<p>
+<li>(Optional) We also have an algorithm extension to GIL which allows you do resampling and convolution. 
+You should place the extension in GIL's extension folder. See GIL's example files for sample code using the extension.
+
+<ul>
+<li><a href="numeric.zip">numeric.zip</a></li>
+<li><a href="numeric.tar.gz">numeric.tar.gz</a></li>
+</ul>
+
+Note: The algorithm extension is in a very early stage of development; it
+is not documented and has not been optimized for performance. 
+Would you like to <a href="contribute.html">contribute</a> an improved version?
+
+</ol>
+
+</p>
+
+<h2><a class="anchor" name="download_m2">Download a version through the Adobe Open
+Source Libraries</a></h2>
+GIL is also part of the Adobe Open Source Library. Therefore, you will get
+GIL (and Boost) if you download the latest ASL. Check out <a
+href="http://stlab.adobe.com">
+http://stlab.adobe.com</a> for instructions on how to
+obtain ASL. This is the recommended method if you use other parts of ASL
+together with GIL. By installing ASL you skip steps 1 and 2 above.
+<p></p>
+
+<hr>
+<!--
+Older releases: <a href="gil1.1.zip">GIL 1.1</a>, <a href="gil2.1.zip">GIL 2.1</a>
+-->
+<!-- Begin Footer -->
+</td></tr>
+</tbody></table>
+
+<div class="footerdiv">
+	<ul>
+		<li><a href="http://www.adobe.com/go/gftray_foot_aboutadobe">Company</a>&nbsp;|&nbsp;</li>
+		<li><a href="http://www.adobe.com/go/gftray_foot_privacy_security">Online Privacy Policy</a>&nbsp;|&nbsp;</li>
+		<li><a href="http://www.adobe.com/go/gftray_foot_terms">Terms of Use</a>&nbsp;|&nbsp;</li>
+
+		<li><a href="http://www.adobe.com/go/gftray_foot_contact_adobe">Contact Us</a>&nbsp;|&nbsp;</li>
+		<li><a href="http://www.adobe.com/go/gftray_foot_accessibility">Accessibility</a>&nbsp;|&nbsp;</li>
+		<li><a href="http://www.adobe.com/go/gftray_foot_report_piracy">Report Piracy</a>&nbsp;|&nbsp;</li>
+		<li><a href="http://www.adobe.com/go/gftray_foot_permissions_trademarks">Permissions &amp; Trademarks</a>&nbsp;|&nbsp;</li>
+		<li><a href="http://www.adobe.com/go/gftray_foot_product_license_agreements">Product License Agreements</a>&nbsp;|&nbsp;</li>
+
+		<li><a href="http://www.adobe.com/go/gftray_foot_feedback">Send Feedback</a></li>
+	</ul>
+	<div>
+		<p>Copyright &copy; 2006-2007 Adobe Systems Incorporated.</p>
+		<p>Use of this website signifies your agreement to the <a href="http://www.adobe.com/go/gftray_foot_terms">Terms of Use</a> and <a href="http://www.adobe.com/go/gftray_foot_privacy_security">Online Privacy Policy</a>.</p>
+	</div>
+</div>
+
+</body></html>

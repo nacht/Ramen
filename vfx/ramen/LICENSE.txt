@@ -1,0 +1,8 @@
+Ramen contains code from different open source projects 
+with different licenses.
+
+The code included in the extern directory has their 
+respective licences and copyright notes.
+
+The code inside the ramen subdirectory is mostly licensed under the CDDL 1.0, 
+with some exceptions. Please see the individual source files for more info.

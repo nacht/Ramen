@@ -1,0 +1,27 @@
+Steps to follow to update the GIL stand-alone web pages:
+The paths below refer to subdirectories inside "submission/adobe/"
+
+1. Make sure the GIL header files at adobe/gil/... contain external files only. Delete any internal files. For example in the io extension files like image_io.hpp, targa.hpp, io_factory.hpp, and *_old.hpp are not yet part of the stand-alone version of GIL
+
+2. If the tutorial or the design guide changed, you will need to regenerate their PDF versions: 
+ Run the doxygen script at documentation/gil/gil_standalone/gil_pdf_documentation.doxygen. (This generates the files in a style good for PDF)
+ Open the file documentation/gil/gil_standalone/html/gildesignguide.html and save to PDF at documentation/gil/gil_standalone/gil/gil_design_guide.pdf
+ Open the file documentation/gil/gil_standalone/html/giltutorial.html and save to PDF at documentation/gil/gil_standalone/gil/gil_tutorial.pdf
+
+3. Delete the folder documentation/gil/gil_standalone/gil/html (if it exists)
+
+4. Run the doxygen script at documentation/gil/gil_standalone/gil_standalone.doxygen. This should regenerate the html folder above
+
+5. Compress the GIL header files at adobe/adobe/gil/... into documentation/gil/gil_standalone/gil/gil.zip and documentation/gil/gil_standalone/gil/gil.tar.gz
+Also compress _separately_ the numeric extension
+tar zcf gil.tar.gz gil
+
+6. The folder documentation/gil/gil_standalone/gil now contains the proper web page.
+
+7. Update the documentation sample files
+
+8. Open a connection with webprod.macromedia.com:/data/www/sites/opensource-staging.adobe.com/htdocs/gil/ and FTP any changes to there.
+
+9. Log in to http://webpush.macromedia.com/stlab.adobe.com
+
+10. Push all changed files (may need to check the "push all subdirectories of selected items"). The website should update.

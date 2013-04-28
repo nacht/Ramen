@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>rmn</string>
+				<string>RMN</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>ramendoc.icns</string>
+			<key>CFBundleTypeMIMETypes</key>
+			<array>
+				<string>doc/r-comp</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Ramen Composition</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>7RmC</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>Ramen</string>
+	<key>CFBundleGetInfoString</key>
+	<string>0.5, © 2010 Ramen Team</string>
+	<key>CFBundleIconFile</key>
+	<string>ramen.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.ramen.Ramen</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Ramen</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>RMnC</string>
+	<key>CFBundleVersion</key>
+	<string>0.5</string>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+</dict>
+</plist>

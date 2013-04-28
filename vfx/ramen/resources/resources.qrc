@@ -1,0 +1,33 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+	<file>icons/arrow.png</file>
+	<file>icons/brush.png</file>
+	<file>icons/clone.png</file>
+	<file>icons/eraser.png</file>
+	<file>icons/eyedropper.png</file>
+	<file>icons/eyedropper_minus.png</file>
+	<file>icons/eyedropper_plus.png</file>
+	<file>icons/move.png</file>
+	<file>icons/pen.png</file>
+	<file>icons/pencil.png</file>
+	<file>icons/link.png</file>
+
+	<file>icons/smooth_tan.png</file>
+	<file>icons/flat_tan.png</file>
+	<file>icons/linear_tan.png</file>
+	<file>icons/step_tan.png</file>
+	
+	<file>icons/fastfwd.png</file>
+	<file>icons/next_frame.png</file>
+	<file>icons/next_key.png</file>
+	<file>icons/play_back.png</file>
+	<file>icons/play.png</file>
+	<file>icons/prev_frame.png</file>
+	<file>icons/prev_key.png</file>
+	<file>icons/rewind.png</file>
+	<file>icons/stop.png</file>
+
+	<file>small_app_icon.png</file>
+	<file>splash.jpg</file>
+</qresource>
+</RCC>

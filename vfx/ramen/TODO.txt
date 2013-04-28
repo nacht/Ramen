@@ -1,0 +1,39 @@
+
+	Ramen TODO
+	----------
+
+        - replace Qt event classes by some generic code.
+
+        - modify the params layout of the color corrector
+
+        - use scan conversion + backward mapping in corner pin node
+
+        - don't use assert as abort.
+        - add a simple sharpen node.
+
+	- add an option to work in log color space to the add grain node
+
+        - add a set_time node?
+
+        - research a possible multi layer output node
+
+        - add a flag for interactive ui manipulation & use it to avoid filling the cache
+	- tune image cache
+
+        - create an ImathFunExt and add some funs like smoothstep, ...
+        - start manipulators code
+
+        - make distort a subclass of node. add options to request the full frame
+
+        - math ops node?
+
+        - export node factory to python
+        - add shortcuts to node info
+
+        Params
+        ------
+
+        OFX
+        ---
+
+            - multithreading
